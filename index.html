@@ -1,56 +1,57 @@
-<!-- index.html -->
-
+<!-- Redesigned index.html with enhanced navigation and global styles -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Movie and TV Show List and Cartoon Movies Watchlist</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-              }
+        }
 
         header {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1em;
-           }
-
-        nav {
-           
-            background-color: #eee;
-            padding: 0.5em;
-            }
+            position: relative;
+        }
 
         nav ul {
-            
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            font: 25px solid grey;
-            /* display: flex; */
-      }
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            list-style: none;
+            border-bottom: 2px solid #ccc;
+        }
 
-        nav li {
-            
-            margin-right: 1em;
-            }
-
-    nav a {
+        nav a {
+            font-weight: bold;
+            padding: 10px 15px;
             text-decoration: none;
             color: #333;
-              }
+            transition: background 0.3s, color 0.3s;
+        }
 
-    section {
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        section {
             margin: 1em;
-             }
+            text-align: center;
+        }
 
-    footer {
+        footer {
             background-color: #333;
             color: white;
             text-align: center;
@@ -58,43 +59,56 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-           }
-    a:hover{
-            color : blue;
-           }
-   ul{
-    background-image:url('https://img.freepik.com/free-photo/flat-lay-cinematography-elements-with-copy-space_23-2148457804.jpg');
-    background-size: cover;
-    background-repeat:no-repeat;
-   }
-   
-   </style>
+        }
+
+        .welcome {
+            padding: 2rem;
+        }
+
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+        }
+
+        .dark-mode table {
+            background-color: #2c2c2c;
+            color: #eee;
+        }
+
+        .dark-mode th {
+            background-color: #444;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Watchlist Of Siddhant Baliyan</h1>
+        <button onclick="toggleDarkMode()" style="position:absolute; top:10px; right:10px;">🌙 Toggle Dark Mode</button>
     </header>
     <nav>
-        <ul> 
-            <!-- <li><a href="MovieNames.html">Movies</a></li> -->
-            <li><a href="EnglishMovies.html">Movies</a></li>
-            <li><a href="MarvelMovies.html">Marvel Movies</a></li>
-            <li><a href="TVShowsNames.html">TV Shows</a></li>
-            <li><a href="HindiTvShows.html">Hindi TV Shows</a></li>
-            <li><a href="cartoon.html">Animation Films</a></li>
-            <li><a href="MarvelTvShows.html">Marvel Tv Shows</a></li>
+        <ul>
+            <li><a href="EnglishMovies.html">🎬 Movies</a></li>
+            <li><a href="MarvelMovies.html">🦸 Marvel Movies</a></li>
+            <li><a href="TVShowsNames.html">📺 TV Shows</a></li>
+            <li><a href="HindiTvShows.html">🇮🇳 Hindi TV Shows</a></li>
+            <li><a href="cartoon.html">🎞️ Animation Films</a></li>
+            <li><a href="MarvelTvShows.html">🦸 Marvel TV Shows</a></li>
         </ul>
     </nav>
     <section id="content">
-        <!-- Content will be dynamically updated here -->
+        <div class="welcome">
+            <h2>Welcome to Your Personal Watchlist</h2>
+            <p style="font-size: 1.2rem;">Track all your favorite movies, TV shows, cartoons, and Marvel content easily.</p>
+        </div>
     </section>
-
     <footer>
         <p>For any suggestions email me at my address baliyansiddhant13@gmail.com</p>
-        <p>&copy; 2024 Movie and TV Show Watchlist<br></p>
-        
+        <p>&copy; 2024 Movie and TV Show Watchlist</p>
     </footer>
-
-   
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
