@@ -60,6 +60,7 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "American Pie Presents: Girls Rules", year: 2020, genre: "Comedy", watched: false },
         { title: "Now You See Me 1", year: 2013, genre: "Thriller, Mystery", watched:true },
         { title: "Now You See Me 2", year: 2016, genre: "Thriller, Mystery", watched:true },
+        { title: "Now You See Me 3", year: 2025, genre: "Thriller, Mystery", watched:false },
         { title: "Star Wars Chapter IV: A New Hope", year: 1977, genre: "Sci-Fi, Adventure", watched: false },
         { title: "Star Wars Chapter V: The Empire Strikes Back", year: 1980, genre: "Sci-Fi, Adventure", watched: false },
         { title: "Star Wars Chapter VI: Return of the Jedi", year: 1983, genre: "Sci-Fi, Adventure", watched: false },
