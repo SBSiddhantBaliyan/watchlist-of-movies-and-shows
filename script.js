@@ -244,7 +244,8 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Jerry Maguire", year: 1996, genre: "Drama, romance , comedy", watched: true },
         { title: "Uptown Girls ", year: 2003, genre: "comedy , romance", watched: true },
         { title: "F1", year: 2025, genre: "Documentary", watched: true },
-        { title: "The proposal ", year:2009 , genre: " Comedy , Romance",  watched: false },
+        { title: "The proposal ", year:2009 , genre: " Comedy , Romance",  watched: true },
+        { title: "she's the man ", year:2000 , genre: " comedy ,sport",  watched: true },
         { title: "Good Luck Chuck", year: 2007 , genre: "Comedy , Romance   ",  watched: true   },
         { title: "The Amateur", year: 2025, genre: "Action, Thriller", watched: false },
         { title: "I am Sam", year: 2001, genre: "Drama", watched: false },
@@ -276,9 +277,9 @@ const movies = [  { title: "John Wick: Chapter 1", year: 2014, genre: "Action, T
         { title: "Enough", year: 2002, genre: "Thriller , Action", watched: false },
         { title: "Love and other Drugs", year: 2010, genre: "Comedy , Romance", watched: false },
         { title: "The Blind Side", year: 2009, genre: "Sport , Drama", watched: false  },
-        { title: "Rush", year:2013, genre: " Sport , Action  ",  watched: false   },
-        { title: "Empty  ", year:2000 , genre: " Alpha , beta  ",  watched: false  }, 
-        { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
+        { title: "Rush", year:2013, genre: " Sport , Action  ",  watched: false   }
+        
+      //  { title: "Empty  ", year:2000 , genre: " Gamma , delta   ",  watched: true }
 ];
 
 
